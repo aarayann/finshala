@@ -454,98 +454,84 @@ sequenceDiagram
 
 ```
 finshala/
-├── frontend/                       # React + Vite + TypeScript
+├── frontend/
 │   ├── src/
-│   │   ├── App.tsx                 # Root component with route definitions
-│   │   ├── main.tsx                # Entry point
-│   │   ├── index.css               # Global styles (parchment & ink theme)
-│   │   │
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   │   ├── index.css
 │   │   ├── pages/
-│   │   │   ├── Index.tsx           # Landing page (hero + feature sections)
-│   │   │   ├── FireDashboard.tsx   # FIRE planning dashboard (40KB — most complex page)
-│   │   │   ├── MoneyHealthPage.tsx # Health score assessment page
-│   │   │   ├── TaxWizardPage.tsx   # Tax optimization with Form 16 upload
-│   │   │   ├── AiShalaPage.tsx     # AI Shala — agentic pipeline interface
-│   │   │   ├── Account.tsx         # User profile management (20KB)
-│   │   │   └── NotFound.tsx        # 404 page
-│   │   │
+│   │   │   ├── Index.tsx
+│   │   │   ├── FireDashboard.tsx
+│   │   │   ├── MoneyHealthPage.tsx
+│   │   │   ├── TaxWizardPage.tsx
+│   │   │   ├── AiShalaPage.tsx
+│   │   │   ├── Account.tsx
+│   │   │   └── NotFound.tsx
 │   │   ├── components/
-│   │   │   ├── Navbar.tsx          # Navigation with auth integration
-│   │   │   ├── HeroPanels.tsx      # Interactive glass panels on landing page
-│   │   │   ├── FeatureFirePath.tsx  # FIRE feature showcase section
-│   │   │   ├── FeatureMoneyHealth.tsx # Health score feature section
-│   │   │   ├── FeatureTaxWizard.tsx   # Tax wizard feature section
-│   │   │   ├── FeatureAiShala.tsx     # AI Shala feature section
-│   │   │   ├── AuthModal.tsx       # Login/signup modal
-│   │   │   ├── ProfileGate.tsx     # Ensures user completes profile
-│   │   │   │
-│   │   │   ├── ai-shala/           # AI Shala components
-│   │   │   │   └── GenUIRenderer.tsx  # Renders dynamic UI from JSON schema
-│   │   │   ├── health-score/       # Health score visualization components
-│   │   │   ├── tax-wizard/         # Tax wizard UI components
-│   │   │   ├── onboarding/         # Onboarding flow components
-│   │   │   │
-│   │   │   └── ui/                 # 68 reusable UI components
-│   │   │       ├── GlobalChatbot.tsx       # AI chatbot interface
-│   │   │       ├── PulsingCircle.tsx       # Chatbot trigger button
-│   │   │       ├── liquid-glass.tsx        # Glassmorphism effects
-│   │   │       ├── hero-section-with-smooth-bg-shader.tsx  # 3D shader background
-│   │   │       ├── orbiting-skills.tsx     # AI Shala orbiting animation
-│   │   │       ├── modern-animated-hero-section.tsx  # Matrix rain effect
-│   │   │       └── ... (65 more shadcn/ui components)
-│   │   │
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── HeroPanels.tsx
+│   │   │   ├── FeatureFirePath.tsx
+│   │   │   ├── FeatureMoneyHealth.tsx
+│   │   │   ├── FeatureTaxWizard.tsx
+│   │   │   ├── FeatureAiShala.tsx
+│   │   │   ├── AuthModal.tsx
+│   │   │   ├── ProfileGate.tsx
+│   │   │   ├── ai-shala/
+│   │   │   │   └── GenUIRenderer.tsx
+│   │   │   ├── health-score/
+│   │   │   ├── tax-wizard/
+│   │   │   ├── onboarding/
+│   │   │   └── ui/
+│   │   │       ├── GlobalChatbot.tsx
+│   │   │       ├── PulsingCircle.tsx
+│   │   │       ├── liquid-glass.tsx
+│   │   │       ├── hero-section-with-smooth-bg-shader.tsx
+│   │   │       ├── orbiting-skills.tsx
+│   │   │       ├── modern-animated-hero-section.tsx
 │   │   ├── services/
-│   │   │   ├── fire-engine.ts      # FIRE calculation engine (TypeScript port)
-│   │   │   ├── health-score-engine.ts  # Health score engine (TypeScript port)
-│   │   │   ├── tax-wizard-engine.ts    # Tax calculation engine
-│   │   │   ├── llm-service.ts      # HuggingFace LLM client with fallback chains
-│   │   │   ├── form16-parser.ts    # Form 16 PDF text parsing
-│   │   │   └── pdf-generator.ts    # Client-side PDF utilities
-│   │   │
+│   │   │   ├── fire-engine.ts
+│   │   │   ├── health-score-engine.ts
+│   │   │   ├── tax-wizard-engine.ts
+│   │   │   ├── llm-service.ts
+│   │   │   ├── form16-parser.ts
+│   │   │   └── pdf-generator.ts
 │   │   ├── hooks/
-│   │   │   ├── useAuth.tsx         # Supabase authentication hook
-│   │   │   ├── useUserProfile.ts   # LocalStorage profile management
-│   │   │   ├── useCountUp.ts       # Animated number counter
-│   │   │   └── use-mobile.tsx      # Responsive breakpoint detection
-│   │   │
+│   │   │   ├── useAuth.tsx
+│   │   │   ├── useUserProfile.ts
+│   │   │   ├── useCountUp.ts
+│   │   │   └── use-mobile.tsx
 │   │   └── data/
-│   │       └── fireMockData.ts     # Mock data for development
-│   │
-│   ├── package.json                # Frontend dependencies
-│   ├── tailwind.config.ts          # Parchment & ink design tokens
-│   ├── vite.config.ts              # Vite build configuration
-│   └── vitest.config.ts            # Test configuration
+│   │       └── fireMockData.ts
+│   ├── package.json
+│   ├── tailwind.config.ts
+│   ├── vite.config.ts
+│   └── vitest.config.ts
 │
-├── backend/                        # Node.js API Gateway
-│   ├── server.js                   # Express server (LLM proxy, health check)
-│   ├── package.json                # Backend dependencies
-│   ├── .env.example                # Environment variable template
-│   │
-│   └── python_api/                 # Python Flask API (Core Intelligence)
-│       ├── app.py                  # Main Flask app (all route registrations)
-│       ├── fire_engine.py          # FIRE planning engine (833 lines)
-│       ├── health_score_engine.py  # Health score engine (637 lines)
-│       ├── report_generator.py     # PDF report generator (929 lines)
-│       ├── requirements.txt        # Python dependencies
-│       │
-│       ├── ai_shala/               # Agentic AI Module
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env.example
+│   └── python_api/
+│       ├── app.py
+│       ├── fire_engine.py
+│       ├── health_score_engine.py
+│       ├── report_generator.py
+│       ├── requirements.txt
+│       ├── ai_shala/
 │       │   ├── __init__.py
-│       │   ├── orchestrator.py     # Sequential multi-agent pipeline
-│       │   ├── llm_client.py       # HuggingFace LLM client (3-model fallback)
-│       │   ├── routes.py           # Flask blueprint (/api/v2/ai-shala/*)
-│       │   │
-│       │   └── agents/             # Specialized AI Agents
-│       │       ├── tax_agent.py    # Tax optimization analysis
-│       │       ├── xai_agent.py    # Explainable AI health decomposition
-│       │       ├── stress_agent.py # Monte Carlo stress testing
-│       │       └── genui_agent.py  # Dynamic UI schema assembly
-│       │
-│       └── test_*.py               # API test scripts
+│       │   ├── orchestrator.py
+│       │   ├── llm_client.py
+│       │   ├── routes.py
+│       │   └── agents/
+│       │       ├── tax_agent.py
+│       │       ├── xai_agent.py
+│       │       ├── stress_agent.py
+│       │       └── genui_agent.py
+│       └── test_*.py
 │
-├── .gitignore                      # Git ignore rules
-└── README.md                       # You are here
+├── .gitignore
+└── README.md
 ```
-
 
 ## 🤖 GenAI Integration Deep Dive
 
@@ -707,7 +693,10 @@ curl http://localhost:5000/api/v2/ai-shala/health  # AI Shala
 
 | Name | LinkedIn |
 |----- | -------|
-| Bhavya Sodhi   | [Profile](https://www.linkedin.com/in/bhavya-sodhi-7a60372bb/) |
+| Bhavya Sodhi  | [Profile](https://www.linkedin.com/in/bhavya-sodhi-7a60372bb/) |
+| Aryan Chauhan | [Profile](https://www.linkedin.com/in/aarayann/) |
+| Harsh Mittal | [Profile](https://www.linkedin.com/in/harshm1111/) |
+| Härshit Bhalia | [Profile](https://www.linkedin.com/in/h%C3%A4rshit-bhalia-76319128a/) |
 
 
 ---
