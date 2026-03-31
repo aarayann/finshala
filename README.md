@@ -6,8 +6,13 @@
 </p>
 
 <p align="center">
-  <a href="#-demo-video"><img src="https://img.shields.io/badge/▶_Demo_Video-Watch_Now-8B6F47?style=for-the-badge" alt="Demo Video" /></a>
-  <a href="#-ai-shala--agentic-intelligence"><img src="https://img.shields.io/badge/🧠_AI_Shala-Explore-6366f1?style=for-the-badge" alt="AI Shala" /></a>
+  <a href="https://youtu.be/EZbtbZWgScs" target="_blank">
+    <img src="https://img.shields.io/badge/▶_Demo_Video-Watch_Now-8B6F47?style=for-the-badge" alt="Demo Video" />
+  </a>
+
+  <a href="#-ai-shala--agentic-intelligence">
+    <img src="https://img.shields.io/badge/🧠_AI_Shala-Explore-6366f1?style=for-the-badge" alt="AI Shala" />
+  </a>
 </p>
 
 <p align="center">
