@@ -89,27 +89,14 @@ You enter your financial details once. Finshala then:
 ## ↦ Demo Video
 
 <p align="center">
-  <a href="https://youtu.be/YOUR_VIDEO_ID">
+  <a href="[https://youtu.be/YOUR_VIDEO_ID](https://youtu.be/EZbtbZWgScs)">
     <img src="docs/assets/demo-thumbnail.png" alt="Finshala Demo Video" width="80%" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12);" />
   </a>
 </p>
 
 <p align="center">
-  <i>▶ Click the image above to watch the full demo (2 minutes)</i>
+  <i>▶ Click the image above to watch the full demo (3 minutes)</i>
 </p>
-
-### Demo Flow — Timestamp Guide
-
-| Timestamp | What You'll See |
-|-----------|----------------|
-| `0:00 – 0:15` | Landing page with interactive glass panels and animated hero |
-| `0:15 – 0:35` | Financial profile onboarding (income, expenses, loans, goals) |
-| `0:35 – 0:55` | FIRE Dashboard — Lean/Regular/Fat retirement projections with year-by-year roadmap |
-| `0:55 – 1:15` | Money Health Score — 6-dimension radar with AI explanations |
-| `1:15 – 1:35` | Tax Wizard — Form 16 PDF upload, regime comparison, missed deductions |
-| `1:35 – 1:55` | AI Shala — Full 5-agent agentic pipeline with GenUI rendering |
-| `1:55 – 2:10` | PDF report generation and AI chatbot interaction |
-
 ---
 
 ## 🔥 Core Features
