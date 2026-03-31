@@ -607,25 +607,12 @@ If 10,000 users complete onboarding:
 
 ## 📸 Screenshots
 
-> *Add your screenshots here. Recommended sections:*
-
-### Landing Page
-`<!-- ![Landing Page](docs/screenshots/landing-page.png) -->`
-
-### FIRE Dashboard
-`<!-- ![FIRE Dashboard](docs/screenshots/fire-dashboard.png) -->`
-
-### Money Health Score
-`<!-- ![Health Score](docs/screenshots/health-score.png) -->`
-
 ### Tax Wizard
-`<!-- ![Tax Wizard](docs/screenshots/tax-wizard.png) -->`
+![Tax Wizard](https://raw.githubusercontent.com/aarayann/finshala/main/frontend/images/tax_wizard_page.png)
+
 
 ### AI Shala — Agentic Pipeline
-`<!-- ![AI Shala](docs/screenshots/ai-shala.png) -->`
-
-### PDF Reports
-`<!-- ![PDF Report](docs/screenshots/pdf-report.png) -->`
+![AI Shala](https://raw.githubusercontent.com/aarayann/finshala/main/frontend/images/ai_shala_page.png)
 
 ---
 
