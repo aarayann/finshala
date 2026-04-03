@@ -521,6 +521,5 @@ If 10,000 users complete onboarding:
 
 Built with ❤️ for India's financial future &nbsp;·&nbsp; ET GenAI Hackathon 2026
 
-<img src="https://img.shields.io/badge/Made_in-India_🇮🇳-orange?style=for-the-badge" alt="Made in India" />
 
 </div>
